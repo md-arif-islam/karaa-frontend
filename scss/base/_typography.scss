@@ -1,0 +1,169 @@
+// :root{
+//     --fs-400:1rem;
+//     --fs-500:1.125rem;
+//     --fs-600:1.375rem;
+//     --fs-700:2rem;
+//  }
+//  @media(min-width:45em){
+//     --fs-400:1.125rem;
+//     --fs-500:1.375rem;
+//     --fs-600:2.75rem;
+//     --fs-700:4.125rem;
+//  }
+
+
+
+
+//===== COMMON STYLES====//
+
+@import '../utilities/animation';
+
+// =====================
+// h1 style
+// =====================
+
+h1 {
+
+    font-size: clamp(2rem, 5vw, 6rem);
+    margin: 0.67rem 0;
+    font-weight: 700;
+    color: $secondary-color;
+    letter-spacing: 0.2rem;
+}
+
+.lg_section {
+    @extend .flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+.yellow_bar {
+    position: relative;
+    width: 6rem;
+    height: 0.3rem;
+    display: block;
+    background: $primary-color;
+}
+.dark_bar {
+    position: relative;
+    width: 6rem;
+    height: 0.4rem;
+    display: block;
+    background: $dark-color;
+}
+
+.dark {
+    color: $text-color !important;
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+.yellow {
+    color: $primary-color !important;
+    font-weight: 500;
+    font-size: clamp(2rem, 5vw, 2rem);
+}
+
+// =====================
+// h2 style
+// =====================
+h2 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: 500;
+    color: $light-color;
+    text-align: justify;
+}
+
+h3 {
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 500;
+    color: $light-color;
+}
+h4 {
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $light-color;
+}
+
+// =====================
+// paragraph style
+// =====================
+p {
+    font-family: $poppins;
+    font-size: clamp(1.3rem, 5vw, 1.6rem);
+    font-weight: 400;
+    text-align: justify;
+    color: $dark-color-7;
+    line-height: 1.8;
+    padding: 1rem 0.5rem;
+}
+
+// =====================
+// a style
+// =====================
+a {
+    font-weight: 600;
+    color: $dark-color;
+    text-decoration: none;
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    display: block;
+
+    &:hover {
+
+        color: $secondary-color;
+    }
+}
+
+
+
+// =====================
+// paragraph style
+// =====================
+@mixin paragarph($font-family, $font-size, $text-color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $text-color;
+}
+
+.lg-text {
+    font-size: clamp(3rem, 5vw, 8rem);
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: $text-color;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+// =====================
+// SECTION TITLE 
+// =====================
+
+.section_title {
+    @extend .flex_content;
+    flex-direction: column;
+    font-size: 4rem;
+
+    &-important {
+        @extend .flex;
+    }
+
+    &-text {
+
+        max-width: 100rem;
+
+        p {
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.section_subtitle {
+    margin-bottom: 8rem;
+    font-size: 3rem;
+}

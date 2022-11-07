@@ -1,0 +1,34 @@
+#getapp_karra 
+{
+    background: $secondary-color;
+    .getapp_btns 
+    {
+        @extend .flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .getbtn 
+        {
+            padding: 1rem 3rem;
+            width: 25rem;
+            background: $dark-color;
+            color: $light-color;
+            @include transition(0.3s ease);
+            border: 0.3rem solid $dark-color;
+            @include border-radius(3rem);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            &:hover 
+            {
+                background: $primary-color;
+                color: $dark-color-8;
+                border-color: $light-color-4;
+            }
+            i 
+            {
+                font-size: 5rem;
+            }
+        }
+    }
+}

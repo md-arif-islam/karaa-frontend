@@ -1,0 +1,2751 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* hide arrows
+ Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield !important;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 6rem);
+  margin: 0.67rem 0;
+  font-weight: 700;
+  color: #FDCD58;
+  letter-spacing: 0.2rem;
+}
+
+.lg_section {
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.yellow_bar {
+  position: relative;
+  width: 6rem;
+  height: 0.3rem;
+  display: block;
+  background: #FCB814;
+}
+
+.dark_bar {
+  position: relative;
+  width: 6rem;
+  height: 0.4rem;
+  display: block;
+  background: #000;
+}
+
+.dark {
+  color: #0D0D0D !important;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.yellow {
+  color: #FCB814 !important;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 2rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 500;
+  color: #fff;
+  text-align: justify;
+}
+
+h3 {
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-weight: 500;
+  color: #fff;
+}
+
+h4 {
+  font-size: clamp(1rem, 5vw, 2rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.3rem, 5vw, 1.6rem);
+  font-weight: 400;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.8;
+  padding: 1rem 0.5rem;
+}
+
+a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  font-size: clamp(1.3rem, 5vw, 1.8rem);
+  display: block;
+}
+a:hover {
+  color: #FDCD58;
+}
+
+.lg-text {
+  font-size: clamp(3rem, 5vw, 8rem);
+  color: #FDCD58;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  color: #0D0D0D;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.section_title {
+  flex-direction: column;
+  font-size: 4rem;
+}
+.section_title-text {
+  max-width: 100rem;
+}
+.section_title-text p {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.section_subtitle {
+  margin-bottom: 8rem;
+  font-size: 3rem;
+}
+
+.flex, #contact .contact_information, #getapp_karra .getapp_btns, #creative_team .team_card_info-socail ul, #team_values .team_card, .newscard_sm_info, #allnews .newsCard_bottom, #contact_form .contact_form-inner_address ul, #header_area, .lg_section, .section_title-important {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex_center, #team_of_karaa .teamwrapper .profile-card .caption, .bikeImg_content a, .bikeImg_content, #team_values .team_card-icon, #about_hero .about_hero-content, .menu_icon, .vdo_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_content, #team_of_karaa .teamwrapper .profile-card .caption .social-links, .section_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.g-2 {
+  gap: 20px;
+}
+
+.inner_padding {
+  padding: 4rem;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+section {
+  padding: 15rem 0;
+  width: 100%;
+}
+
+.first_section {
+  padding: 20rem 0;
+}
+
+.inner_section {
+  padding-top: 0;
+  padding-bottom: 20rem;
+}
+
+.last_section {
+  padding-top: 0;
+  padding-bottom: 20rem;
+}
+
+.vdoBg {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-attachment: fixed;
+  z-index: 100;
+}
+
+.vdo_content {
+  position: absolute;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+.vdo_content h1 {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.vdo_content h1 span {
+  font-size: clamp(4rem, 5vw, 5rem);
+  color: #FCB814;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+.vdo_content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+  color: #fff !important;
+  max-width: 60rem;
+}
+
+.dark_title {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 4rem;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navigation ul li {
+  list-style: none;
+  padding-right: 2.5rem;
+  display: inline-block;
+}
+.navigation ul li:last-child {
+  padding-right: 0;
+}
+.navigation ul li a {
+  display: block;
+  font-weight: 500;
+  transition: 0.5s ease 0s;
+}
+.navigation ul li a:hover {
+  color: #FCB814;
+}
+
+.logo img {
+  width: 10rem;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #000;
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.primary_btn {
+  transition: 0.5s ease 0s;
+  background: #FCB814;
+  border: 0.2rem solid #FCB814;
+  color: #fff;
+}
+.primary_btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #fff;
+}
+
+.secondary_btn {
+  background: transparent;
+  color: #fff;
+  transition: 0.5s ease 0s;
+  border: 0.3rem solid #fff;
+}
+.secondary_btn:hover {
+  background: linear-gradient(to top, #FCB814, #FDCD58);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+
+.secondary_btn.btn-dark {
+  background: #000;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.secondary_btn.btn-dark:hover {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+
+.submit_btn {
+  background: #FCB814;
+  border-radius: 1.2rem;
+  outline: none;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit_btn:hover {
+  background: linear-gradient(to top, #FCB814, #FDCD58);
+}
+
+.default_btn {
+  color: #FCB814;
+  display: inline-block;
+}
+.default_btn span {
+  transform: rotate(130deg);
+  transition: 0.5s;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.default_btn span i {
+  font-size: 3rem;
+}
+.default_btn:hover span {
+  transform: rotate(180deg);
+}
+.default_btn:hover {
+  color: #000;
+}
+.default_btn:hover span {
+  color: #000;
+  margin-right: 0.5rem;
+}
+
+.language-dropdown {
+  position: relative;
+  top: 0.3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.language-dropdown button {
+  border: 0;
+  background: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5rem;
+}
+.language-dropdown-menu {
+  position: absolute;
+  top: 120%;
+  left: -3rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 1.5rem 1.5rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.language-dropdown-menu li {
+  text-align: center;
+  padding: 0 !important;
+}
+.language-dropdown-menu li a {
+  display: block;
+  padding: 1.5rem 3rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+.language-dropdown-menu li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.language-dropdown-menu li a:hover img {
+  transform: scale(1.1);
+}
+.language-dropdown-menu li a img {
+  display: block;
+  transition: 0.5s ease 0s;
+}
+.language-dropdown img {
+  width: 4rem;
+  height: 4rem;
+  display: block;
+}
+
+.menu_icon {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: 0;
+  z-index: 3000;
+  visibility: hidden;
+  display: none;
+}
+.menu_icon:hover {
+  background: #FCB814;
+}
+.menu_icon:hover i {
+  color: #000;
+}
+.menu_icon i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+#header_area {
+  min-height: 5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 1.5rem 0;
+  z-index: 2000;
+  background: #fff;
+}
+
+footer {
+  padding: 5rem 2rem 3rem 2rem;
+  position: relative;
+  background: #000;
+  color: #fff;
+}
+
+.footer_single p {
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  font-weight: 300;
+}
+.footer_single img {
+  width: 15rem;
+}
+.footer_single .socail_links ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.footer_single .socail_links ul li a i {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.footer_single .socail_links ul li a i:hover {
+  color: #FCB814;
+}
+.footer_single h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.footer_single .list-items li {
+  margin: 2rem 0;
+}
+.footer_single .list-items li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.footer_single .list-items li a:hover {
+  color: #FCB814;
+}
+
+.footer_form h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.footer_form .newsletter_form form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.footer_form .newsletter_form form input[type=email] {
+  height: 5rem;
+  padding: 1rem 2rem !important;
+  width: 100%;
+  background: #fff !important;
+  border-radius: 1rem;
+  transition: 0.5s ease;
+  border: 0;
+  outline: 0;
+}
+.footer_form .newsletter_form form input[type=email]:focus {
+  padding-left: 3rem;
+}
+
+.copyright_text {
+  padding-top: 3rem;
+}
+.copyright_text span {
+  color: #fff;
+}
+.copyright_text a {
+  display: inline-block;
+  color: #FCB814;
+}
+.copyright_text a:hover {
+  color: #FDCD58;
+}
+
+@media only screen and (max-width: 991px) {
+  footer .footer-top h2 {
+    text-align: left !important;
+    font-size: 35px !important;
+  }
+  footer .footer-top .download-app-button {
+    margin-bottom: 1.5rem;
+  }
+  footer .footer-top .inner-column h2 {
+    text-align: left !important;
+    font-size: 35px !important;
+  }
+}
+#about_hero {
+  position: relative;
+  background-image: url("../../images/about-bg.webp");
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  min-height: 50rem;
+}
+#about_hero .about_hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+#about_hero .about_hero-content h1 {
+  color: #fff;
+  margin-top: 10rem;
+}
+
+#comapny_aims .comapany_img {
+  position: relative;
+  height: 50rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+#comapny_aims .comapany_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#comapny_aims .company_aims-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  margin: 2rem 0;
+}
+#comapny_aims .company_aims-content p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0;
+}
+
+.contact_hero {
+  position: relative;
+  background: #F2F2F2;
+  min-height: 60rem;
+}
+.contact_hero-content {
+  position: absolute;
+  left: 18%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.contact_hero-content h1 {
+  color: #0D0D0D;
+  margin-bottom: 2rem;
+}
+.contact_hero-content h2 {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.contact_hero-content h2 span {
+  display: block;
+}
+
+#contact_form {
+  padding-bottom: 0;
+}
+#contact_form .contact_form-inner {
+  position: relative;
+  padding: 5rem 2rem 20rem 2rem;
+  background: #FDCD58;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+#contact_form .contact_form-inner h1 {
+  color: #0D0D0D;
+}
+#contact_form .contact_form-inner p {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+#contact_form .contact_form-inner_address ul {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  gap: 10rem;
+}
+#contact_form .contact_form-inner_address ul li {
+  margin: 2rem 0;
+  display: inline-block;
+}
+#contact_form .contact_form-inner_address ul li a {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact_form .contact_form-inner_address ul li a:hover i {
+  background: #FCB814;
+  color: #000;
+  border-color: rgba(0, 0, 0, 0.4);
+}
+#contact_form .contact_form-inner_address ul li a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+#contact_form .contact_form-inner_address ul li a i {
+  font-size: 2rem;
+  height: 4rem;
+  width: 4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  line-height: 4rem;
+  border-radius: 50%;
+}
+#contact_form .contact_form-inner_socail {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  padding: 2rem;
+}
+#contact_form .contact_form-inner_socail ul {
+  display: flex;
+  gap: 1rem;
+}
+#contact_form .contact_form-inner_socail ul li a i {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 3rem;
+}
+#contact_form .contact_form-inner_socail ul li a:hover i {
+  color: #000;
+}
+#contact_form .contact_form {
+  background: #fff;
+  position: relative;
+  bottom: 20rem;
+  box-shadow: 0 0.5rem 2rem rgba(13, 13, 13, 0.15);
+  border-radius: 1.5rem;
+}
+#contact_form .contact_form form {
+  padding: 2rem;
+}
+#contact_form .contact_form form .inputBox label {
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  display: block;
+  font-weight: 500;
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+#contact_form .contact_form form .inputBox ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+#contact_form .contact_form form .inputBox :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+#contact_form .contact_form form .inputBox ::placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+#contact_form .contact_form form .inputBox input,
+#contact_form .contact_form form .inputBox textarea {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 0.5rem;
+}
+#contact_form .contact_form form .inputBox input:focus,
+#contact_form .contact_form form .inputBox textarea:focus {
+  border-color: #FDCD58;
+}
+#contact_form .contact_form form .inputBox textarea {
+  min-height: 10rem;
+}
+#contact_form .contact_form form .inputBox input,
+#contact_form .contact_form form .inputBox textarea {
+  width: 100%;
+}
+#contact_form .contact_form form .inputBx_btn {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#karra_map {
+  background: rgba(44, 44, 43, 0.1);
+}
+#karra_map h1 {
+  color: rgba(0, 0, 0, 0.8);
+}
+#karra_map h2 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#news_hero {
+  position: relative;
+  padding: 20rem 0 8rem 0;
+}
+#news_hero .news_intro .secondary_btn {
+  border: 0.2rem solid transparent;
+}
+#news_hero .news_intro .secondary_btn:hover {
+  border: 0.2rem solid rgba(0, 0, 0, 0.6);
+}
+#news_hero .news_intro h1 {
+  margin-bottom: 3rem;
+}
+#news_hero .rounded_img img {
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+#news_hero .news_desc p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#allnews {
+  padding: 5rem 0;
+}
+#allnews .newsCard {
+  margin-bottom: 2rem;
+}
+#allnews .newsCard:hover img {
+  transform: scale(1.1);
+  transition: all 0.8s cubic-bezier(0.66, 0.08, 0.19, 0.97);
+}
+#allnews .newsCard_img {
+  position: relative;
+  overflow: hidden;
+  height: 25rem;
+  border-radius: 1rem;
+}
+#allnews .newsCard_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 100%;
+     object-position: 100% 100%;
+  transition: 0.5s ease;
+}
+#allnews .newsCard_bottom {
+  align-items: center;
+  align-content: center;
+  padding: 1rem 0;
+}
+#allnews .newsCard_bottom_title h2 {
+  letter-spacing: 0;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+#allnews .newsCard_bottom_info h3 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 1.6rem;
+}
+#allnews .newsCard_bottom_info h3 strong {
+  font-weight: 700;
+}
+
+.newsCard-lg .newsCard .newsCard_img {
+  height: 100% !important;
+}
+.newsCard-lg .newsCard .newsCard_img img {
+  height: 100%;
+}
+
+.newscard_sm {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem 2rem;
+  min-height: 13rem;
+  display: flex;
+  align-content: end;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s ease;
+  box-shadow: 0 0rem 0rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.newscard_sm:hover {
+  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.3rem);
+}
+.newscard_sm_title h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  color: #000;
+}
+.newscard_sm_info {
+  justify-content: space-between;
+}
+
+#single_news {
+  position: relative;
+}
+#single_news .singlenews_post h1 {
+  font-size: clamp(1.8rem, 5vw, 6rem);
+  font-weight: 600;
+  color: #000;
+}
+#single_news .singlenews_post h2 {
+  font-size: clamp(1.6rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #000;
+}
+#single_news .singlenews_post .left_img {
+  height: 60rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 5%;
+     object-position: 0 5%;
+  margin: 2.5rem 0;
+}
+
+.newsCard .newsCard_img img {
+  height: 50rem;
+}
+
+.newsCard_bottom_title h2 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.inner_left_padding {
+  padding-left: 8.5rem;
+}
+
+.newscard_inner .news_title {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.news_date {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.newsCard .news_date {
+  padding-top: 1.5rem;
+}
+.newsCard .newsCard_bottom_title h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#team_hero h1 {
+  margin-bottom: 3rem;
+}
+#team_hero .rounded_img {
+  height: 50rem;
+}
+
+#team_values {
+  background: linear-gradient(95.53deg, rgba(252, 184, 20, 0.0893) 16.56%, rgba(255, 255, 255, 0.19) 98.99%);
+}
+#team_values .team_card-wrapper {
+  padding-left: 8rem;
+}
+#team_values .team_card {
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+#team_values .team_card-icon {
+  background: rgba(0, 0, 0, 0.8);
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.6);
+}
+#team_values .team_card-icon span {
+  display: block;
+}
+#team_values .team_card-icon span img {
+  width: 3.5rem;
+}
+#team_values .team_card-title h3 {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#creative_team .team_card {
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 3rem 0rem;
+  display: flex;
+}
+#creative_team .team_card_profile {
+  display: flex;
+  align-items: center;
+}
+#creative_team .team_card_profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#creative_team .team_card_info {
+  width: 70%;
+  padding-left: 5rem;
+}
+#creative_team .team_card_info-name h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: left;
+  color: #000;
+  margin: 1rem 0;
+}
+#creative_team .team_card_info-position h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: left;
+  color: #FCB814;
+  margin: 1rem 0;
+}
+#creative_team .team_card_info-socail ul {
+  gap: 2rem;
+}
+#creative_team .team_card_info-socail ul li a i {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+#creative_team .team_card_info-socail ul li a i:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+#creative_team .team_card_info-socail svg:hover {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(14%) contrast(97%);
+}
+
+#app_hero {
+  position: relative;
+  padding: 22rem 0 10rem 0;
+}
+#app_hero .dark_title {
+  font-size: 3.6rem;
+}
+#app_hero .app_statistics {
+  gap: 2rem;
+}
+#app_hero .app_statistics .number_box span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+#app_hero .app_statistics .number_box h2 {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0.5rem 0 3rem 0;
+}
+#app_hero .howitwork a {
+  font-size: 2rem;
+}
+#app_hero .secondary_btn {
+  border: 0.2rem solid transparent;
+}
+#app_hero .secondary_btn:hover {
+  border: 0.2rem solid rgba(0, 0, 0, 0.6);
+}
+#app_hero .karaa_app-img {
+  position: relative;
+}
+
+#easytouseapp {
+  position: relative;
+}
+#easytouseapp .dark_title {
+  font-size: 3.6rem;
+}
+#easytouseapp .secondary_btn {
+  border: 0.2rem solid transparent;
+}
+#easytouseapp .secondary_btn:hover {
+  border: 0.2rem solid rgba(0, 0, 0, 0.6);
+}
+
+.apps_img {
+  position: relative;
+  z-index: 10;
+}
+.apps_img::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.1rem solid rgba(255, 255, 255, 0.4);
+  z-index: -9;
+}
+
+#advantage_of_karaa-app .dark_title {
+  font-size: 3.6rem;
+}
+#advantage_of_karaa-app .secondary_btn {
+  border: 0.2rem solid transparent;
+  margin-top: 2rem;
+}
+#advantage_of_karaa-app .secondary_btn:hover {
+  border: 0.2rem solid rgba(0, 0, 0, 0.6);
+}
+#advantage_of_karaa-app .advantages ul li {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+#advantage_of_karaa-app .advantages ul li i {
+  color: #000;
+  position: relative;
+  top: 0.5rem;
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
+#faq .main-wrapper {
+  overflow-x: hidden;
+}
+#faq .faq-content .faq-item {
+  margin-bottom: 0.8rem;
+}
+#faq .faq-content .faq-item-head {
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+#faq .faq-content .faq-item-head:hover {
+  box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.1);
+}
+#faq .faq-content .faq-item-icon {
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #F2F2F2;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.5rem;
+}
+#faq .faq-content .faq-item-text {
+  font-size: 2rem;
+}
+#faq .faq-content .faq-item-body {
+  overflow: hidden;
+  max-height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  transition: all 0.3s ease;
+  border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+#faq .faq-content .faq-item-body p {
+  font-weight: 300;
+  padding: 1rem;
+  color: #000 !important;
+  margin: 0;
+}
+#faq .faq-content .show-para {
+  max-height: 1000px;
+}
+
+#about_us {
+  position: relative;
+  background: #F2F2F2;
+}
+#about_us img {
+  border-radius: 5rem 50% 5rem 0;
+  box-shadow: 0 1.4rem 2.8rem rgba(0, 0, 0, 0.1), 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+#about_us img:hover {
+  filter: saturate(2);
+}
+#about_us .about_content {
+  padding-left: 5rem;
+}
+#about_us .about_content h1 {
+  position: relative;
+  font-size: 4rem;
+}
+#about_us .about_content p {
+  text-align: justify;
+}
+
+#karaa_history {
+  position: relative;
+}
+#karaa_history .history_img {
+  position: relative;
+  width: 100%;
+  height: 44rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+#karaa_history .history_img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#karaa_history .history_content {
+  padding-left: 4rem;
+}
+
+#gallery_of_karaa {
+  background: #fff;
+}
+
+.bikeImg {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1), 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1), 0 1.6rem 1.6rem rgba(0, 0, 0, 0.1);
+  transform-origin: center;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 200%);
+  transition: 0.5s ease;
+  z-index: 10;
+  cursor: pointer;
+}
+.bikeImg:hover .bikeImg_content {
+  transform: translateY(0);
+  transition: 0.2s ease;
+}
+.bikeImg:hover img {
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+.bikeImg img {
+  transition: 0.5s ease;
+}
+.bikeImg img:hover {
+  transform: scale(1.1);
+}
+.bikeImg_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  background: radial-gradient(rgba(0, 0, 0, 0.8) 0%, #000 100%);
+  opacity: 0.8;
+  transition: 0.1s ease;
+  z-index: 10;
+  z-index: 200;
+}
+.bikeImg_content a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  bottom: -100%;
+  z-index: 100;
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 2rem;
+  transition: 1s ease;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 30%;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.6);
+  text-align: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+.bikeImg_content .view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.bikeImg_content .view i {
+  color: #fff;
+  font-size: 5rem;
+}
+.bikeImg_content .view .bike-desc {
+  opacity: 0;
+}
+
+.big-stretch {
+  position: relative;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#team_of_karaa {
+  position: relative;
+  background: #fff;
+}
+#team_of_karaa h2 {
+  margin-bottom: 10rem;
+}
+#team_of_karaa .teamwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+#team_of_karaa .teamwrapper .profile-card {
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  width: 30rem;
+  height: 30rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transition: 0.6s;
+}
+#team_of_karaa .teamwrapper .profile-card:nth-child(odd) {
+  transform: scale(0.9);
+}
+#team_of_karaa .teamwrapper .profile-card:hover {
+  border-radius: 1.5rem;
+}
+#team_of_karaa .teamwrapper .profile-card .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 99;
+}
+#team_of_karaa .teamwrapper .profile-card .img img {
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#team_of_karaa .teamwrapper .profile-card:hover .img {
+  transform: translateY(-100px) scale(0.6);
+}
+#team_of_karaa .teamwrapper .profile-card:hover img {
+  border-radius: 50%;
+}
+#team_of_karaa .teamwrapper .profile-card:hover .caption {
+  transform: translateY(-150px);
+  opacity: 1;
+}
+#team_of_karaa .teamwrapper .profile-card .caption {
+  text-align: center;
+  transform: translateY(-130px);
+  opacity: 0;
+  transition: 0.6s;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+#team_of_karaa .teamwrapper .profile-card .caption h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0;
+  margin: 0;
+}
+#team_of_karaa .teamwrapper .profile-card .caption p {
+  text-align: center;
+}
+#team_of_karaa .teamwrapper .profile-card .caption .social-links {
+  gap: 2rem;
+}
+#team_of_karaa .teamwrapper .profile-card .caption .social-links i {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.6);
+  transition: 0.8s ease;
+}
+#team_of_karaa .teamwrapper .profile-card .caption .social-links i:hover {
+  color: #0D0D0D;
+}
+
+#news {
+  background: #fff;
+  position: relative;
+}
+#news .news_card-img {
+  position: relative;
+  width: 100%;
+  height: 19rem;
+}
+#news .news_card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#news .news_card .news_conent {
+  padding-left: 1rem;
+}
+#news .news_card-date span {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  display: block;
+  color: rgba(0, 0, 0, 0.6);
+}
+#news .news_card-title h2 {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+#news .news_card-desc p {
+  text-align: justify;
+  font-size: 1.4rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.newscard_slider .owl-nav {
+  position: absolute;
+  left: 0;
+  bottom: -10rem;
+  font-size: 5rem;
+  color: #000;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: #FCB814;
+  text-decoration: none;
+}
+
+#newsletter {
+  position: relative;
+  background: rgba(253, 205, 88, 0.56);
+  padding: 0;
+}
+#newsletter h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+}
+#newsletter .newsletter_form form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+#newsletter .newsletter_form form .inputBx {
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  background: #fff;
+  box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.8rem 0.8rem 4rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  transition: 0.5s ease;
+  border: 0;
+  outline: 0;
+}
+#newsletter .newsletter_form form .inputBx:focus {
+  padding-left: 3rem;
+}
+#newsletter .newsletter_form form input[type=email] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  background: none;
+  outline: 0;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+#newsletter .newsletter_img {
+  transform: scale(1.4);
+  position: relative;
+  top: -7rem;
+}
+#newsletter .submit_btn {
+  box-shadow: 0.8rem 0.8rem 4rem rgba(0, 0, 0, 0.1);
+}
+
+.newsletter_form form {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.newsletter_form form .inputBx {
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  background: #fff;
+  box-shadow: 8px 8px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.8rem 0.8rem 4rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  transition: 0.5s ease;
+  border: 0;
+  outline: 0;
+}
+.newsletter_form form .inputBx:focus {
+  padding-left: 3rem;
+}
+.newsletter_form form input[type=email] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  background: none;
+  outline: 0;
+  padding: 1rem 2rem;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+#features .lg_section {
+  padding-left: 28rem;
+}
+#features .featured {
+  padding-left: 32rem;
+  padding-right: 0rem;
+  margin-top: 5rem;
+  margin: 0 auto;
+}
+#features .featured_card {
+  position: relative;
+  height: 35rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+#features .featured_card:hover img {
+  transform: scale(1.1);
+  -o-object-position: bottom center;
+     object-position: bottom center;
+}
+#features .featured_card-img {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+#features .featured_card img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: contrast(0.8) brightness(0.6);
+  transition: 0.8s ease 0s;
+}
+#features .featured_card-content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  bottom: -100%;
+  left: 0;
+  border-radius: 2rem 2rem 0 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(252, 184, 20, 0.15);
+  padding-left: 3rem;
+  transition: 0.5s ease;
+}
+#features .featured_card:hover .featured_card-content {
+  bottom: 0;
+}
+
+.owl-carousel .owl-nav.disabled {
+  display: block !important;
+}
+
+.featured_slider .owl-nav {
+  position: absolute;
+  right: 1rem;
+  bottom: -10rem;
+  font-size: 5rem;
+  color: #FCB814;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+  color: #000;
+  text-decoration: none;
+}
+
+#tips_for_bike .tips_content {
+  padding-right: 4rem;
+}
+#tips_for_bike .tips_content-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+#tips_for_bike .tips_content-items-icon i {
+  font-size: 4rem;
+}
+
+.rounded_img {
+  position: relative;
+  width: 100%;
+  height: 44rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.rounded_img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#whyebike {
+  box-shadow: 0 0.5rem 2rem rgba(13, 13, 13, 0.15);
+  background: #fff;
+}
+#whyebike img {
+  width: 100%;
+  border-radius: 1.5rem;
+  border: 0.2rem solid #F2F2F2;
+}
+#whyebike .pr-6 {
+  padding: 6rem;
+}
+#whyebike .pl-6 {
+  padding-left: 6rem;
+}
+
+#app {
+  background: rgba(252, 184, 20, 0.71);
+  padding: 0;
+  height: 30rem;
+}
+#app .app_text {
+  padding-top: 5rem;
+}
+#app .app_img {
+  position: relative;
+  z-index: 100;
+  top: -12rem;
+}
+
+#getapp_karra {
+  background: #FDCD58;
+}
+#getapp_karra .getapp_btns {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#getapp_karra .getapp_btns .getbtn {
+  padding: 1rem 3rem;
+  width: 25rem;
+  background: #000;
+  color: #fff;
+  transition: 0.3s ease;
+  border: 0.3rem solid #000;
+  border-radius: 3rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#getapp_karra .getapp_btns .getbtn:hover {
+  background: #FCB814;
+  color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+#getapp_karra .getapp_btns .getbtn i {
+  font-size: 5rem;
+}
+
+#reviews {
+  position: relative;
+  background: #F2F2F2;
+}
+#reviews .review_card {
+  border-radius: 1.5rem;
+  border: 0.01rem solid #000;
+  overflow: hidden;
+}
+#reviews .review_card-speech {
+  background: #fff;
+  padding: 0rem 2rem;
+  overflow: hidden;
+}
+#reviews .review_card-speech p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+#reviews .review_card-speech .speech {
+  font-size: 6rem;
+  color: #FDCD58;
+}
+#reviews .review_card-speech .author {
+  text-align: center;
+}
+#reviews .review_card-speech .author h4 {
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+#reviews .review_card-speech .author .tagline {
+  font-family: "Poppins", sans-serif;
+  display: block;
+  font-weight: 700;
+}
+
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  transform: translateY(-50%) scale(0.7);
+}
+
+.swiper-button-next {
+  transform-origin: right;
+}
+
+.swiper-button-prev {
+  transform-origin: left;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #0D0D0D;
+  border: 0.2rem solid #fff;
+  transition: 0.3s ease 0s;
+  top: 50%;
+  transform: translateY(-50%) scale(0);
+  right: 1rem;
+  padding: 4rem;
+  color: #fff !important;
+  fill: black !important;
+  border-radius: 5rem;
+  stroke: black !important;
+  margin: 0 !important;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #FDCD58;
+}
+
+#contact .contact_form h1 {
+  position: relative;
+  margin-bottom: 5rem;
+  color: #fff;
+}
+#contact .contact_form h1::after {
+  position: absolute;
+  content: "";
+  bottom: -2rem;
+  left: 0;
+  width: 15rem;
+  height: 0.2rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+#contact .contact_form .input_field input {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border: 0.1rem solid rgba(13, 21, 37, 0.5);
+  outline: 0;
+  box-shadow: 0.8rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  transition: 0.5s ease;
+}
+#contact .contact_form .input_field input:focus {
+  padding-left: 2rem;
+  border-color: #FCB814;
+}
+#contact .contact_form .input_field textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2.5rem;
+  background: #fff;
+  border: 0.1rem solid rgba(13, 21, 37, 0.5);
+  outline: 0;
+  transition: 0.5s ease;
+  box-shadow: 0.8rem 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+#contact .contact_form .input_field textarea:focus {
+  padding-left: 2rem;
+  border-color: #FCB814;
+}
+#contact .contact_information {
+  position: relative;
+  background: #FCB814;
+  width: 40rem;
+  height: 40rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+  border-radius: 1.5rem;
+}
+#contact .contact_information h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+#contact .contact_information img {
+  position: absolute;
+  transform: scale(1);
+  bottom: 0;
+  left: 80%;
+}
+#contact .contact_information ul li {
+  display: flex;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+#contact .contact_information ul li a {
+  color: #fff;
+  font-weight: 400;
+}
+#contact .contact_information ul li i {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+@media only screen and (max-width : 1199px) {
+  #app {
+    height: auto;
+  }
+  #app .app_img {
+    top: 0;
+  }
+}
+@media only screen and (max-width : 1024px) {
+  #faq .dark_title {
+    font-size: 3rem;
+  }
+  #advantage_of_karaa-app .advantages ul li {
+    font-size: 1.8rem;
+  }
+  .inner_left_padding {
+    padding-left: 0;
+  }
+  #app_hero .karaa_app-img {
+    display: none;
+  }
+  #app_hero {
+    padding: 12rem 0 0rem 0;
+  }
+  .rounded_img {
+    height: 30rem;
+  }
+  .first_section {
+    padding: 10rem 0;
+  }
+  #tips_for_bike {
+    padding-bottom: 10rem !important;
+  }
+  #features .featured {
+    padding-left: 0rem;
+  }
+  .inner_section {
+    padding-bottom: 10rem;
+  }
+  #contact .contact_information img {
+    display: none;
+  }
+  section {
+    padding: 10rem 0;
+  }
+  #contact .contact_information {
+    width: 100%;
+    height: 100%;
+  }
+  #team_of_karaa .teamwrapper .profile-card {
+    width: 25rem;
+    height: 25rem;
+  }
+  #getapp_karra .getapp_btns .getbtn {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  #newsletter .newsletter_img {
+    transform: scale(1);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    top: 0;
+  }
+  .language-dropdown-menu {
+    top: 125%;
+    left: -5rem;
+  }
+  #creative_team .team_card_info {
+    width: 90%;
+    padding-left: 1rem;
+  }
+}
+@media only screen and (max-width : 991px) {
+  .apps_img::after {
+    width: 20rem;
+    height: 20rem;
+  }
+  .first_section {
+    padding: 5rem 0;
+  }
+  .last_section {
+    padding-bottom: 5rem;
+  }
+  #creative_team .team_card_profile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #creative_team .team_card_profile-img img {
+    width: 18rem;
+  }
+  #creative_team .team_card_info {
+    width: 100%;
+    padding-left: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #team_values .team_card-wrapper {
+    padding-left: 0rem;
+  }
+  section {
+    padding: 8rem 0;
+  }
+  section#team_hero {
+    padding-bottom: 0rem;
+    margin-top: 3rem;
+  }
+  #team_values .team_card {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  #team_values .team_card-title h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  #contact_form .contact_form-inner_socail {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  #contact_form .contact_form-inner_address ul {
+    gap: 3rem;
+  }
+  .inner_padding {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .navigation ul li {
+    padding-right: 2rem;
+  }
+  .navigation ul li a {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .vdo_content {
+    padding-top: 4rem;
+  }
+  .vdo_content h1 {
+    font-size: 4rem;
+  }
+  #karaa_history .history_content {
+    padding-top: 3rem;
+    padding-left: 0;
+  }
+  .rounded_img {
+    height: 40rem;
+  }
+  #features .lg_section {
+    padding-left: 0rem;
+  }
+  #team_of_karaa .teamwrapper .profile-card {
+    width: 25rem;
+    height: 25rem;
+    margin-bottom: 5rem;
+  }
+  .product_content {
+    margin-bottom: 2rem;
+  }
+  #tips_for_bike .tips_content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+  #team_of_karaa .teamwrapper .profile-card:hover .caption {
+    transform: translateY(-130px);
+  }
+  #contact .contact_information {
+    margin-top: 3rem;
+    padding: 4rem;
+  }
+  .lg_section {
+    justify-content: center;
+  }
+  #newsletter h1 {
+    text-align: center;
+  }
+  #newsletter .newsletter_form form {
+    justify-content: center;
+  }
+  #newsletter {
+    padding: 5rem 0 0 0;
+  }
+  #news .lg_section {
+    flex-direction: column;
+  }
+  .lg_section {
+    flex-direction: column-reverse;
+    margin-bottom: 5rem !important;
+  }
+  .lg_section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .footer_single {
+    margin: 2rem 0;
+  }
+  .apps_img {
+    margin: 5rem 0;
+  }
+  #faq {
+    padding-top: 0;
+  }
+  .faq_inner {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .faq_inner .dark_title {
+    text-align: center;
+  }
+}
+@media only screen and (max-width : 768px) {
+  .faq_inner .dark_title {
+    text-align: center;
+    font-size: 3rem;
+  }
+  #allnews .rounded_img {
+    height: 35rem;
+    width: 100%;
+    margin: 0;
+  }
+  #news_hero {
+    position: relative;
+    padding: 10rem 0 4rem 0;
+  }
+  #news_hero .news_intro h1 {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  #news_hero .rounded_img {
+    height: 37rem;
+    width: 100%;
+    margin: 0;
+  }
+  #creative_team .team_card {
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 3rem 0rem;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .navigation {
+    justify-content: space-between;
+  }
+  .button {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+  }
+  .lg_section {
+    margin-bottom: 4rem !important;
+    justify-content: flex-start;
+  }
+  .lg_section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .lg_section .dark {
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  #karaa_history .lg_section {
+    margin-bottom: 1rem !important;
+  }
+  #karaa_history .rounded_img {
+    height: 35rem;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .menulist {
+    position: absolute;
+    padding: 5rem 0;
+    top: 0;
+    background: #000;
+    height: 100vh;
+    left: -100%;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .menulist.active {
+    left: 0;
+  }
+  .rounded_img {
+    height: 40rem;
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .menu_icon {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+  }
+  ul.menulist li {
+    display: block;
+    text-align: center;
+    transition: 0s;
+  }
+  ul.menulist li a {
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+  .vdo_content h1 {
+    font-size: 3.5rem;
+  }
+  .dark {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #team_of_karaa .teamwrapper .profile-card {
+    width: 60%;
+    height: 30rem;
+  }
+  #team_of_karaa .teamwrapper .profile-card .img img {
+    transform: translateY(-20px) scale(1);
+    width: 18rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #team_of_karaa .teamwrapper .profile-card:hover .img {
+    transform: translateY(0) scale(1);
+  }
+  #team_of_karaa .teamwrapper .profile-card .caption p {
+    padding: 0;
+  }
+  #team_of_karaa .teamwrapper .profile-card:nth-child(odd) {
+    transform: scale(1);
+  }
+  #team_of_karaa .teamwrapper .profile-card .caption {
+    transform: translateY(-130px);
+    opacity: 1;
+  }
+  #team_of_karaa .teamwrapper .profile-card:hover .caption {
+    transform: translateY(-130px);
+    opacity: 1;
+  }
+  #contact .contact_form h1::after {
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  form {
+    padding: 0 2rem;
+  }
+  #newsletter .newsletter_form form input[type=email] {
+    height: 5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+  }
+  .flex-column {
+    width: 100%;
+  }
+  .inputBx {
+    border: 1px solid #000;
+    width: 100%;
+  }
+  .footer_form {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  #product {
+    text-align: center;
+    padding-top: 5rem;
+  }
+  form {
+    text-align: center;
+  }
+  #creative_team .team_card_info-position h3 {
+    margin: 0;
+  }
+}
+@media only screen and (max-width : 767px) {
+  #team_values .team_card-wrapper {
+    padding-left: 0rem;
+  }
+  .vdo_content h1 {
+    font-size: 2.5rem;
+  }
+  #contact_form .contact_form-inner_address ul {
+    gap: 0rem;
+    flex-direction: column;
+  }
+  .vdo_content p {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .button {
+    padding: 1.3rem 2rem;
+    font-size: 1.6rem;
+  }
+  #app .app_text {
+    text-align: center;
+    padding: 2rem;
+  }
+  #newsletter .newsletter_form form input[type=email] {
+    padding: rem;
+    width: 100%;
+  }
+  #getapp_karra .getapp_btns .getbtn {
+    font-size: 1.5rem;
+  }
+  #getapp_karra .getapp_btns .getbtn {
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  footer {
+    padding: 4rem 0rem 3rem 2rem;
+  }
+}
+@media only screen and (max-width : 495px) {
+  #faq .faq-content .faq-item-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0 1rem;
+  }
+  section#advantage_of_karaa-app {
+    padding-top: 0;
+  }
+  #app_hero .howitwork a {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+  }
+  #app_hero .dark_title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #app_hero p {
+    text-align: center;
+  }
+  #app_hero .app_statistics .number_box span {
+    font-size: 2.5rem;
+  }
+  #app_hero .app_statistics .number_box h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .apps_img {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  #easytouseapp .dark_title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  #advantage_of_karaa-app .advantages ul li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #advantage_of_karaa-app .advantages ul li i {
+    top: 0.6rem;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+  }
+  #advantage_of_karaa-app .dark_title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .started_btn {
+    justify-content: center;
+  }
+  #app_hero .app_statistics {
+    gap: 3rem;
+    justify-content: center;
+    text-align: center;
+  }
+  #karaa_history .rounded_img {
+    height: 35rem;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  #news_hero .dark {
+    padding: 0 0rem;
+  }
+  #allnews .newsCard_bottom_title h2 {
+    font-size: 1.6rem;
+  }
+  #allnews .newsCard {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  #allnews .newsCard_img {
+    height: 20rem;
+  }
+  .menu_icon i {
+    font-size: 3.5rem;
+  }
+  section {
+    padding: 5rem 0;
+  }
+  .vdo_content {
+    padding-top: 8rem;
+  }
+  #comapny_aims .comapany_img {
+    height: 30rem;
+  }
+  form {
+    padding: 0 1rem;
+  }
+  #newsletter .newsletter_form form {
+    flex-direction: column;
+  }
+  .dark {
+    padding: 0 1rem;
+    line-height: 3rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  section {
+    padding: 8rem 0;
+  }
+  #features .featured_card {
+    height: 30rem;
+  }
+  #contact .contact_information {
+    padding: 1rem;
+  }
+  #features .featured_card-content {
+    padding-left: 1rem;
+  }
+  .vdo_content h1 {
+    display: block;
+    width: 90%;
+    line-height: 1.5;
+  }
+  .navigation {
+    padding: 0 1rem;
+  }
+  #team_of_karaa .teamwrapper .profile-card .img img {
+    width: 16rem;
+  }
+  #team_of_karaa .teamwrapper .profile-card {
+    width: 85%;
+  }
+  .first_section {
+    padding: 5rem 0;
+  }
+  .inner_section {
+    padding-bottom: 5rem;
+  }
+  .lg_section {
+    margin-bottom: 2rem !important;
+    justify-content: flex-start;
+  }
+  .dark {
+    padding: 0 4rem;
+  }
+  #about_company .dark {
+    padding: 0 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  #services .dark {
+    padding: 0 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .footer_form .newsletter_form form {
+    flex-direction: column;
+  }
+  .featured_slider .owl-nav {
+    bottom: -7rem;
+  }
+  #tips_for_bike .tips_content-items {
+    padding: 0 1rem;
+  }
+  .last_section {
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+  #about_hero {
+    min-height: 100vh;
+  }
+  #about_hero .about_hero-content h1 {
+    font-size: 4rem;
+  }
+  #features .featured_card {
+    height: 25rem;
+  }
+  #team_hero .rounded_img {
+    height: 35rem;
+  }
+  #single_news {
+    padding: 12rem 1.5rem 0 1.5rem;
+  }
+  #single_news .singlenews_post .left_img {
+    height: 35rem;
+  }
+  #contact_form .contact_form-inner {
+    padding: 6rem 0;
+    border-radius: 0;
+  }
+  #contact_form .contact_form form .inputBox label {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+  }
+  #contact_form .contact_form form {
+    padding: 1rem;
+  }
+  #faq .dark_title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width : 375px) {
+  #easytouseapp {
+    text-align: center;
+  }
+  .apps_img {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  #advantage_of_karaa-app .secondary_btn {
+    margin: 2rem auto;
+    display: block;
+    width: 15rem;
+    text-align: center;
+  }
+  #karaa_history .rounded_img {
+    height: 30rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  #contact_form {
+    padding-bottom: 0;
+    margin-top: 5rem;
+  }
+  #contact_form .contact_form {
+    bottom: 5rem;
+  }
+  #team_of_karaa h2 {
+    margin-bottom: 5rem;
+    padding: 0 1rem;
+  }
+  #news {
+    background: #fff;
+    position: relative;
+    padding: 3rem 0;
+    margin-bottom: 10rem;
+  }
+  #contact section {
+    padding: 1rem 0 !important;
+  }
+  #contact {
+    margin-bottom: 4rem;
+  }
+  #tips_for_bike .rounded_img {
+    height: 30rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .rounded_img {
+    height: 35rem;
+  }
+  #team_hero .rounded_img {
+    height: 30rem;
+    margin-top: 5rem;
+  }
+  #comapny_aims .comapany_img {
+    height: 25rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .lg_section h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .dark {
+    padding: 0 0rem;
+    font-size: 2.5rem;
+  }
+  section {
+    padding: 3rem 0;
+  }
+  #news_hero .news_intro h1 {
+    margin-bottom: 1rem;
+  }
+  #allnews .newsCard {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  #allnews .newsCard_img {
+    height: 15rem;
+  }
+  p {
+    padding: 0;
+  }
+  #news .rounded_img {
+    height: 30rem;
+    width: 90%;
+  }
+  .started_btn {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width : 320px) {
+  #news_hero {
+    padding: 8rem 0 3rem 0;
+  }
+  #allnews {
+    padding: 0rem 0;
+  }
+  #team_hero .rounded_img {
+    height: 30rem;
+  }
+  #news_hero .rounded_img {
+    height: 30rem;
+    width: 90%;
+    margin: 2rem auto;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+#reviews 
+{
+    position: relative;
+    background: $light-gray;
+
+    .review_card 
+    {
+        @include border-radius(1.5rem);
+        // text-align: center;
+        border: 0.01rem solid $dark-color;
+        overflow: hidden;
+       
+       &-speech 
+       {
+        background: $light-color;
+        padding: 0rem 2rem;
+        overflow: hidden;
+        p 
+        {
+            text-align: center;
+            color: $dark-color-6;
+        }
+        .speech 
+        {
+            font-size: 6rem;
+            color: $secondary-color;
+        }
+        .author 
+        {
+            text-align: center;
+            h4 
+            {
+                font-size: 2.5rem;
+                color: $dark-color-8;
+            }
+            .tagline 
+            {
+                font-family: $poppins;
+                display: block;
+                font-weight: 700;
+            }
+        }
+       }
+    }
+}
+
+
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev
+{
+ @include transform(translateY(-50%) scale(0.7));
+}
+.swiper-button-next 
+{
+    transform-origin: right;
+}
+.swiper-button-prev 
+{
+    transform-origin: left;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: $text-color;
+    border: 0.2rem solid $light-color;
+    @include transition(0.3s ease 0s);
+    top: 50%;
+    @include transform(translateY(-50%) scale(0));
+   right: 1rem;
+    padding: 4rem;
+    color: $light-color !important;
+    fill: black !important;
+    @include border-radius(5rem);
+    stroke: black !important;
+    margin: 0 !important;
+    &:hover 
+{
+    background: $secondary-color;
+}
+}

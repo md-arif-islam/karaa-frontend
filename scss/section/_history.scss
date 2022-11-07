@@ -1,0 +1,31 @@
+#karaa_history 
+{
+    position: relative;
+    .history_img
+    {
+        position: relative;
+        width: 100%;
+        height: 44rem;
+        @include border-radius(1.5rem);
+        overflow: hidden;
+        img 
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .history_content 
+    {
+        padding-left: 4rem;
+    }
+}
+
+
+
+

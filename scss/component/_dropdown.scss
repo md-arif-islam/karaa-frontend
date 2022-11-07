@@ -1,0 +1,64 @@
+.language-dropdown 
+{
+    position: relative;
+    top: 0.3rem;
+    user-select: none;
+    button 
+    {
+        border: 0;
+        background: none;
+        width: 3rem;
+        height: 3rem;
+        @include border-radius(5rem);
+      
+    }
+    &-menu 
+    {
+        position: absolute;
+        top: 120%;
+        left: -3rem;
+        background: $light-color-2;
+        border: 0.1rem solid $light-color-2;
+        @include border-radius(0 0 1.5rem 1.5rem);
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        li 
+        {
+            text-align: center;
+            padding: 0 !important;
+           
+            a 
+            {
+                display: block;
+                padding: 1.5rem 3rem;
+                border-bottom: 0.1rem solid $light-color-1;
+                width: 100%;
+                &:hover 
+                {
+                    background: $light-color-3;
+                }
+                &:hover img
+                {
+                @include transform(scale(1.1));
+                }
+                img 
+                {
+                    display: block;
+                    @include transition(0.5s ease 0s);
+                }
+            }
+        }
+    }
+
+    img 
+    {
+     width: 4rem;
+     height: 4rem;
+     display: block;
+    }
+}

@@ -1,0 +1,108 @@
+.button 
+{
+    font-family: $poppins;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    color: $dark-color;
+    font-weight: 500;
+    text-transform: uppercase;
+    @include border-radius(1.5rem);
+    letter-spacing: 0.1rem;
+    color: $dark-color;
+    display: inline-block;
+    user-select: none;
+
+
+}
+
+
+
+.primary_btn
+{
+    @include transition(0.5s ease 0s);
+    background: $primary-color;
+    border: 0.2rem solid $primary-color;
+    color: $light-color;
+    &:hover 
+    {
+       background: $dark-color-8;
+       border-color: $light-color-8;
+       color: $light-color;
+    }
+}
+.secondary_btn
+{
+    background: transparent;
+    color: $light-color;
+    @include transition(0.5s ease 0s);
+    border: 0.3rem solid $light-color;
+   &:hover 
+   {
+    background: $gradient;
+    border-color: $light-color-4;
+    color: $dark-color;
+   }
+}
+
+.secondary_btn.btn-dark 
+{
+    background: $dark-color;
+    border-color: $dark-color-4;
+    &:hover 
+    {
+     background: $light-color-6;
+     border-color: $light-color-4;
+     color: $dark-color;
+    }
+ }
+
+
+.submit_btn 
+{
+    background: $primary-color;
+    @include border-radius(1.2rem);
+    outline: none;
+    border: none;
+    color: $dark-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover 
+    {
+        background: $gradient;
+    }
+}
+
+.default_btn 
+{
+    color: $primary-color;
+    display: inline-block;
+   span 
+   {
+    @include transform(rotate(130deg));
+    @include transition(0.5s);
+    display: inline-block;
+    margin-right: 1rem;
+    i 
+    {
+        font-size: 3rem;
+    }
+   }
+   &:hover  span
+   {
+    @include transform(rotate(180deg));
+   }
+   &:hover  
+   {
+    color: $dark-color;
+   }
+   &:hover  span
+   {
+    color: $dark-color;
+    margin-right: 0.5rem;
+   }
+
+}
+ 
+
+

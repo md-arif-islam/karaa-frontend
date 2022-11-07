@@ -1,0 +1,61 @@
+
+// ===================================== //
+// COLOR
+// ===================================== //
+// BASIC COLOR
+$primary-color: #FCB814;
+$primary-color-1: rgba(252, 184, 20, 0.15);
+$primary-color-2: rgba(253, 205, 88, 0.56);
+$secondary-color:#FDCD58 ;
+$secondary-color-1:rgba(252, 184, 20, 0.71);
+$text-color:#0D0D0D;
+$light-gray:#F2F2F2;
+$dark-gray:rgba(44,44,43,0.1);
+
+// DARK-VARIANT
+$dark-color:#000;
+$dark-color-1: rgba(0,0,0,0.1);
+$dark-color-2: rgba(0,0,0,0.2);
+$dark-color-3: rgba(0,0,0,0.3);
+$dark-color-4: rgba(0,0,0,0.4);
+$dark-color-5: rgba(0,0,0,0.5);
+$dark-color-6: rgba(0,0,0,0.6);
+$dark-color-7: rgba(0,0,0,0.7);
+$dark-color-8: rgba(0,0,0,0.8);
+$dark-color-9: rgba(0,0,0,0.9);
+$paragraph-color: rgba($text-color, 0.5);
+// WHITE VARIANT
+$light-color:#fff;
+$light-color-1:rgba(255, 255, 255, 0.1);
+$light-color-2:rgba(255, 255, 255, 0.2);
+$light-color-3:rgba(255, 255, 255, 0.3);
+$light-color-4:rgba(255, 255, 255, 0.4);
+$light-color-6:rgba(255, 255, 255, 0.6);
+$light-color-8:rgba(255, 255, 255, 0.8);
+$light-color-1:rgba($light-color,0.1);
+$light-white:rgba($light-color, 0.5);
+// GRADIENT
+$gradient-9:  linear-gradient(95.53deg, rgba(252, 184, 20, 0.0893) 16.56%, rgba(255, 255, 255, 0.19) 98.99%);
+$gradient:linear-gradient(to top,$primary-color,$secondary-color);
+$gradient-1:linear-gradient(to top,$primary-color-1,$primary-color);
+$gradient-4:radial-gradient(circle,$primary-color-1,$primary-color);
+$gradient-2:linear-gradient(to top,$light-color-6,$light-color-8);
+$gradient-3:linear-gradient(to top,$light-color-8,$dark-color-2);
+$gradient-5:linear-gradient(to top,$dark-color-6 10% ,$dark-color-1 100%);
+$gradient-6:radial-gradient($dark-color-8 0% ,$dark-color 100%);
+$gradient-7:radial-gradient(circle , $dark-color-1 0% ,$dark-color-6 200%);
+$gradient-8:radial-gradient(circle , $dark-color-7 0% ,$dark-color-9 200%);
+
+
+// ===================================== //
+// DEFAULT SHADOW
+// ===================================== //
+
+$shadow: 0 0.5rem 2rem rgba($text-color, 0.15) !default;
+
+// ===================================== //
+// FONT VARIABLES
+// ===================================== //
+
+$poppins: 'Poppins', sans-serif;
+

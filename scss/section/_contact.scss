@@ -1,0 +1,113 @@
+#contact {
+    .contact_form {
+        h1 {
+            position: relative;
+            margin-bottom: 5rem;
+            color: $light-color;
+
+            &::after {
+                position: absolute;
+                content: "";
+                bottom: -2rem;
+                left: 0;
+                width: 15rem;
+                height: 0.2rem;
+                background: $dark-color-7;
+
+            }
+        }
+
+        .input_field {
+            input {
+                width: 100%;
+                padding: 1.5rem 1rem;
+                margin-bottom: 2.5rem;
+                background: $light-color;
+                border: 0.1rem solid rgba(13, 21, 37, 0.5);
+                outline: 0;
+                @include box-shadow(0.8rem 0.8rem 1.5rem $dark-color-1);
+                @include border-radius(1rem);
+                @include transition(0.5s ease);
+              &:focus 
+              {
+                padding-left: 2rem;
+                border-color: $primary-color;
+              }
+
+            }
+
+            textarea {
+                width: 100%;
+                height: 10rem;
+                padding: 1.5rem 1rem;
+                margin-bottom: 2.5rem;
+                background: $light-color;
+                border: 0.1rem solid rgba(13, 21, 37, 0.5);
+                outline: 0;
+                @include transition(0.5s ease);
+                @include box-shadow(0.8rem 0.8rem 1.5rem $dark-color-1);
+                @include border-radius(1rem);
+                &:focus 
+                {
+                  padding-left: 2rem;
+                  border-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .contact_information 
+    {
+        position: relative;
+        background: $primary-color;
+        width: 40rem;
+        height: 40rem;
+        @extend .flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 2rem;
+        @include border-radius(1.5rem);
+        h2 
+        {
+            font-size: 2.5rem;
+            color: $light-color;
+            text-align: center;
+        }
+        img 
+        {
+            position: absolute;
+            transform: scale(1);
+            bottom: 0;
+            left: 80%;
+
+        }
+        ul 
+        {
+            
+            li 
+            {
+                display: flex;
+                margin: 1rem 0;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $light-color;
+                a 
+                {
+                    color: $light-color;
+                    font-weight: 400;
+                }
+                i 
+                {
+                    font-size: 3rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        }
+}
+
+
+::placeholder
+{
+    color: $dark-color-6 !important;
+}

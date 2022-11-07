@@ -1,0 +1,33 @@
+#about_us 
+{
+    position: relative;
+    background: $light-gray;
+    img 
+    {
+        @include border-radius(5rem 50% 5rem 0);
+        // box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        @include box-shadow(0 1.4rem 2.8rem $dark-color-1, 0 1rem 1rem $dark-color-2);
+     
+        &:hover 
+        {
+            filter: saturate(2);
+        }
+    }
+    .about_content 
+    {
+        // padding: 5rem;
+        padding-left: 5rem;
+        h1 
+        {
+            position: relative;
+            font-size: 4rem;
+            
+        }
+
+        p 
+        {
+            text-align: justify;
+        }
+    }
+ 
+}

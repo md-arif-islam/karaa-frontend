@@ -1,0 +1,999 @@
+$extralg-desktop: "only screen and (max-width : 1499px)";
+$xllg-desktop: "only screen and (max-width : 1400px)";
+$mediumlg-desktop: "only screen and (max-width : 1320px)";
+$large-desktop: "only screen and (max-width : 1199px)";
+$media-desktop: "only screen and (max-width : 1024px)";
+$medium-desktop: "only screen and (max-width : 991px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 767px)";
+$media-mobile-sm: "only screen and (max-width : 495px)";
+$media-mobile-xs: "only screen and (max-width : 375px)";
+$media-mobile-xxs: "only screen and (max-width : 320px)";
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1499PX
+// =============================
+@media #{$extralg-desktop} {}
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1400PX
+// =============================
+
+
+@media #{$xllg-desktop} {}
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1320PX
+// =============================
+
+@media #{$mediumlg-desktop} {}
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:1199PX
+// =============================
+@media #{$large-desktop} {
+    #app {
+        height: auto;
+    }
+
+    #app .app_img {
+        top: 0;
+    }
+}
+
+// =============================
+//MEDIA-DESKTOP MAX-WIDTH:1024PX
+// =============================
+@media #{$media-desktop} {
+    #faq .dark_title {
+        font-size: 3rem;
+    }
+
+    #advantage_of_karaa-app .advantages ul li {
+        font-size: 1.8rem;
+    }
+
+    .inner_left_padding {
+        padding-left: 0;
+    }
+
+    #app_hero .karaa_app-img {
+        display: none;
+    }
+
+    #app_hero {
+        padding: 12rem 0 0rem 0;
+    }
+
+    .rounded_img {
+        height: 30rem;
+    }
+
+    .first_section {
+        padding: 10rem 0;
+    }
+
+    #tips_for_bike {
+        padding-bottom: 10rem !important;
+    }
+
+    #features .featured {
+        padding-left: 0rem;
+    }
+
+    .inner_section {
+        padding-bottom: 10rem;
+    }
+
+    #contact .contact_information img {
+        display: none;
+    }
+
+    section {
+        padding: 10rem 0;
+    }
+
+    #contact .contact_information {
+        width: 100%;
+        height: 100%;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    #getapp_karra .getapp_btns .getbtn {
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    #newsletter .newsletter_img {
+        transform: scale(1);
+        position: relative;
+        bottom: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .language-dropdown-menu {
+        top: 125%;
+        left: -5rem;
+    }
+
+    #creative_team .team_card_info {
+        width: 90%;
+        padding-left: 1rem;
+    }
+}
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:991px
+// =============================
+@media #{$medium-desktop} {
+    .apps_img::after {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .first_section {
+        padding: 5rem 0;
+    }
+
+    .last_section {
+        padding-bottom: 5rem;
+    }
+
+    #creative_team .team_card_profile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #creative_team .team_card_profile-img img {
+        width: 18rem;
+    }
+
+    #creative_team .team_card_info {
+        width: 100%;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+
+    #team_values .team_card-wrapper {
+        padding-left: 0rem;
+    }
+
+    section {
+        padding: 8rem 0;
+    }
+
+    section#team_hero {
+        padding-bottom: 0rem;
+        margin-top: 3rem;
+    }
+
+    #team_values .team_card {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    #team_values .team_card-title h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #contact_form .contact_form-inner_socail {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    #contact_form .contact_form-inner_address ul {
+        gap: 3rem;
+    }
+
+    .inner_padding {
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    .navigation ul li {
+        padding-right: 2rem;
+    }
+
+    .navigation ul li a {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .vdo_content {
+        padding-top: 4rem;
+    }
+
+    .vdo_content h1 {
+        font-size: 4rem;
+    }
+
+    #karaa_history .history_content {
+        padding-top: 3rem;
+        padding-left: 0;
+    }
+
+    .rounded_img {
+        height: 40rem;
+    }
+
+    #features .lg_section {
+        padding-left: 0rem;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card {
+        width: 25rem;
+        height: 25rem;
+        margin-bottom: 5rem;
+    }
+
+    .product_content {
+        margin-bottom: 2rem;
+    }
+
+    #tips_for_bike .tips_content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card:hover .caption {
+        transform: translateY(-130px);
+    }
+
+    #contact .contact_information {
+
+        margin-top: 3rem;
+        padding: 4rem;
+    }
+
+    .lg_section {
+        justify-content: center;
+    }
+
+    #newsletter h1 {
+        text-align: center;
+    }
+
+    #newsletter .newsletter_form form {
+        justify-content: center;
+    }
+
+    #newsletter {
+        padding: 5rem 0 0 0;
+    }
+
+    #news .lg_section {
+        flex-direction: column;
+    }
+
+    .lg_section {
+        flex-direction: column-reverse;
+        margin-bottom: 5rem !important;
+    }
+
+    .lg_section h1 {
+        font-size: 3rem;
+        font-weight: 700;
+
+    }
+
+    .footer_single {
+        margin: 2rem 0;
+    }
+
+    .apps_img {
+        margin: 5rem 0;
+    }
+
+    #faq {
+        padding-top: 0;
+    }
+
+    .faq_inner {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .faq_inner .dark_title {
+        text-align: center;
+
+    }
+}
+
+
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:768PX
+// =============================
+@media #{$media-tablet} {
+
+    .container,
+    .container-fluid,
+    .container-md,
+    .container-sm {
+        max-width: 720px;
+    }
+
+
+    .faq_inner .dark_title {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #allnews .rounded_img {
+        height: 35rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    #news_hero {
+        position: relative;
+        padding: 10rem 0 4rem 0;
+    }
+
+    #news_hero .news_intro h1 {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+    #news_hero .rounded_img {
+        height: 37rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    #creative_team .team_card {
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding: 3rem 0rem;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        justify-content: space-between;
+    }
+
+    .button {
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .lg_section {
+        margin-bottom: 4rem !important;
+        justify-content: flex-start;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .dark {
+            text-align: center;
+            margin-bottom: 0rem;
+        }
+
+    }
+
+    #karaa_history .lg_section {
+        margin-bottom: 1rem !important;
+    }
+
+    #karaa_history .rounded_img {
+        height: 35rem;
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .menulist {
+        position: absolute;
+        padding: 5rem 0;
+        top: 0;
+        background: #000;
+        height: 100vh;
+        left: -100%;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        transition: all 0.5s ease;
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .menulist.active {
+        left: 0;
+    }
+
+    .rounded_img {
+        height: 40rem;
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    .menu_icon {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+
+    }
+
+    ul.menulist li {
+        display: block;
+        text-align: center;
+        transition: 0s;
+    }
+
+    ul.menulist li a {
+        padding: 1rem 0;
+        font-size: 1.8rem;
+        color: #fff;
+    }
+
+    .vdo_content h1 {
+        font-size: 3.5rem;
+    }
+
+    .dark {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card {
+        width: 60%;
+        height: 30rem;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card .img img {
+        transform: translateY(-20px) scale(1);
+        width: 18rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+    }
+
+    #team_of_karaa .teamwrapper .profile-card:hover .img {
+        transform: translateY(0) scale(1);
+
+    }
+
+    #team_of_karaa .teamwrapper .profile-card .caption p {
+        padding: 0;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card:nth-child(odd) {
+        transform: scale(1);
+    }
+
+    #team_of_karaa .teamwrapper .profile-card .caption {
+        transform: translateY(-130px);
+        opacity: 1;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card:hover .caption {
+        transform: translateY(-130px);
+        opacity: 1;
+    }
+
+    #contact .contact_form h1::after {
+
+        left: 0;
+        right: 0;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    form {
+        padding: 0 2rem;
+    }
+
+    #newsletter .newsletter_form form input[type=email] {
+        height: 5rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        background: none;
+        box-shadow: none;
+    }
+
+    .flex-column {
+        width: 100%;
+    }
+
+    .inputBx {
+        border: 1px solid #000;
+        width: 100%;
+    }
+
+    .footer_form {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #product {
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    #creative_team .team_card_info-position h3 {
+        margin: 0;
+    }
+}
+
+// =============================
+//MEDIA-MOBILE DEVICE MAX-WIDTH:767px
+// =============================
+@media #{$media-mobile} {
+
+    #team_values .team_card-wrapper {
+        padding-left: 0rem;
+    }
+
+    .vdo_content h1 {
+        font-size: 2.5rem;
+    }
+
+    #contact_form .contact_form-inner_address ul {
+        gap: 0rem;
+        flex-direction: column;
+    }
+
+    .vdo_content p {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .button {
+        padding: 1.3rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    #app .app_text {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    #newsletter .newsletter_form form input[type=email] {
+        padding: rem;
+        width: 100%;
+    }
+
+    #getapp_karra .getapp_btns .getbtn {
+        font-size: 1.5rem;
+    }
+
+    #getapp_karra .getapp_btns .getbtn {
+        padding: 1rem 2rem;
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    footer {
+        padding: 4rem 0rem 3rem 2rem;
+    }
+}
+
+
+// =============================
+//MEDIA-MOBILE-SM DEVICE MAX-WIDTH:495PX
+// =============================
+
+@media #{$media-mobile-sm} {
+    #faq .faq-content .faq-item-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 0 1rem;
+    }
+
+    section#advantage_of_karaa-app {
+        padding-top: 0;
+    }
+
+    #app_hero .howitwork a {
+        font-size: 1.6rem;
+        letter-spacing: 0;
+    }
+
+    #app_hero .dark_title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #app_hero p {
+        text-align: center;
+    }
+
+    #app_hero .app_statistics .number_box span {
+        font-size: 2.5rem;
+    }
+
+    #app_hero .app_statistics .number_box h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .apps_img {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    #easytouseapp .dark_title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    #advantage_of_karaa-app .advantages ul li {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #advantage_of_karaa-app .advantages ul li i {
+        top: 0.6rem;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    #advantage_of_karaa-app .dark_title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .started_btn {
+        justify-content: center;
+    }
+
+    #app_hero .app_statistics {
+        gap: 3rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #karaa_history .rounded_img {
+        height: 35rem;
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    #news_hero .dark {
+        padding: 0 0rem;
+    }
+
+    #allnews .newsCard_bottom_title h2 {
+        font-size: 1.6rem;
+    }
+
+    #allnews .newsCard {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    #allnews .newsCard_img {
+        height: 20rem;
+    }
+
+    .menu_icon i {
+        font-size: 3.5rem;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+
+    .vdo_content {
+        padding-top: 8rem;
+    }
+
+    #comapny_aims .comapany_img {
+        height: 30rem;
+    }
+
+    form {
+        padding: 0 1rem;
+    }
+
+    #newsletter .newsletter_form form {
+        flex-direction: column;
+    }
+
+    .dark {
+        padding: 0 1rem;
+        line-height: 3rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 8rem 0;
+    }
+
+    #features .featured_card {
+
+        height: 30rem;
+
+    }
+
+    #contact .contact_information {
+
+        padding: 1rem;
+    }
+
+    #features .featured_card-content {
+        padding-left: 1rem;
+    }
+
+    .vdo_content h1 {
+        display: block;
+        width: 90%;
+        line-height: 1.5;
+    }
+
+    .navigation {
+
+        padding: 0 1rem;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card .img img {
+        width: 16rem;
+    }
+
+    #team_of_karaa .teamwrapper .profile-card {
+        width: 85%;
+    }
+
+    .first_section {
+        padding: 5rem 0;
+    }
+
+    .inner_section {
+        padding-bottom: 5rem;
+    }
+
+    .lg_section {
+        margin-bottom: 2rem !important;
+        justify-content: flex-start;
+    }
+
+    .dark {
+        padding: 0 4rem;
+    }
+
+    #about_company .dark {
+        padding: 0 1rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #services .dark {
+        padding: 0 1rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .footer_form .newsletter_form form {
+        flex-direction: column;
+    }
+
+    .featured_slider .owl-nav {
+        bottom: -7rem;
+    }
+
+    #tips_for_bike .tips_content-items {
+
+        padding: 0 1rem;
+    }
+
+    .last_section {
+        padding-top: 0;
+        padding-bottom: 5rem;
+    }
+
+    #about_hero {
+        min-height: 100vh;
+    }
+
+    #about_hero .about_hero-content h1 {
+
+        font-size: 4rem;
+    }
+
+    #features .featured_card {
+        height: 25rem;
+    }
+
+    #team_hero .rounded_img {
+        height: 35rem;
+
+    }
+
+    #single_news {
+        padding: 12rem 1.5rem 0 1.5rem;
+    }
+
+    #single_news .singlenews_post .left_img {
+        height: 35rem;
+    }
+
+    #contact_form .contact_form-inner {
+        padding: 6rem 0;
+        border-radius: 0;
+    }
+
+    #contact_form .contact_form form .inputBox label {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+    }
+
+    #contact_form .contact_form form {
+        padding: 1rem;
+    }
+
+    #faq .dark_title {
+        font-size: 2.5rem;
+    }
+}
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:375PX
+// ===========================
+@media #{$media-mobile-xs} {
+    #easytouseapp {
+        text-align: center;
+    }
+
+    .apps_img {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    #advantage_of_karaa-app .secondary_btn {
+        margin: 2rem auto;
+        display: block;
+        width: 15rem;
+        text-align: center;
+    }
+
+    #karaa_history .rounded_img {
+        height: 30rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    #contact_form {
+        padding-bottom: 0;
+        margin-top: 5rem;
+    }
+
+    #contact_form .contact_form {
+        bottom: 5rem;
+    }
+
+    #team_of_karaa h2 {
+        margin-bottom: 5rem;
+        padding: 0 1rem;
+    }
+
+    #news {
+        background: #fff;
+        position: relative;
+        padding: 3rem 0;
+        margin-bottom: 10rem;
+    }
+
+    #contact section {
+        padding: 1rem 0 !important;
+    }
+
+    #contact {
+        margin-bottom: 4rem;
+    }
+
+    #tips_for_bike .rounded_img {
+        height: 30rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .rounded_img {
+        height: 35rem;
+    }
+
+    #team_hero .rounded_img {
+        height: 30rem;
+        margin-top: 5rem;
+    }
+
+    #comapny_aims .comapany_img {
+        height: 25rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .lg_section h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .dark {
+        padding: 0 0rem;
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    #news_hero .news_intro h1 {
+        margin-bottom: 1rem;
+    }
+
+    #allnews .newsCard {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    #allnews .newsCard_img {
+        height: 15rem;
+    }
+
+    p {
+        padding: 0;
+    }
+
+    #news .rounded_img {
+        height: 30rem;
+        width: 90%;
+    }
+
+    .started_btn {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+// =============================
+//MEDIA-LARGE DEVICE MAX-WIDTH:320PX
+// ===========================
+@media #{$media-mobile-xxs} {
+    #news_hero {
+        padding: 8rem 0 3rem 0;
+    }
+
+    #allnews {
+        padding: 0rem 0;
+    }
+
+    #team_hero .rounded_img {
+        height: 30rem;
+    }
+
+    #news_hero .rounded_img {
+        height: 30rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+}

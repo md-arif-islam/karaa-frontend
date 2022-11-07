@@ -1,0 +1,82 @@
+// =====================
+// IMPORT ASBSTRACT
+// =====================
+
+@import "../scss/abstract/variable";
+
+// =====================
+// IMPORT BASE
+// =====================
+@import "../scss/base/base";
+@import "../scss/base/typography";
+@import "../scss/base/common";
+
+// =====================
+// IMPORT UTILITIES
+// =====================
+
+@import "../scss/utilities/animation";
+@import "../scss/utilities/appearance";
+@import "../scss/utilities/box-shadow";
+@import "../scss/utilities/calc";
+@import "../scss/utilities/clearfix";
+@import "../scss/utilities/inline";
+@import "../scss/utilities/keyframes";
+@import "../scss/utilities/overflow";
+@import "../scss/utilities/placeholder";
+@import "../scss/utilities/prefixer";
+@import "../scss/utilities/responsive";
+@import "../scss/utilities/transform";
+@import "../scss/utilities/visibility";
+@import "../scss/utilities/transition";
+@import "../scss/utilities/border-radius";
+
+
+// =====================
+// IMPORT COMPONENTS
+// =====================
+
+@import "../scss/component/navigation";   
+@import "../scss/component/logo";
+@import "../scss/component/button";
+@import "../scss/component/card";
+@import "../scss/component/dropdown";
+@import "../scss/component/menuicon";
+
+// =====================
+// IMPORT LAYOUT
+// =====================
+@import '../scss/layout/header';
+@import '../scss/layout/footer';
+
+
+// =====================
+// IMPORT PAGES
+// =====================
+@import '../scss/pages/about';
+@import '../scss/pages/contact';
+@import '../scss/pages/news';
+@import '../scss/pages/singlenews';
+@import '../scss/pages/team';
+@import '../scss/pages/app';
+// =====================
+// IMPORT SECTION
+// =====================
+@import '../scss/section/aboutus';
+@import '../scss/section/history';
+@import '../scss/section/services';
+@import '../scss/section/gallery';
+@import '../scss/section/team';
+@import '../scss/section/news';
+@import '../scss/section/newsletter';
+@import '../scss/section/features';
+@import '../scss/section/tips';
+@import '../scss/section/whyebike';
+@import '../scss/section/appforkaraa';
+@import '../scss/section/getapp';
+@import '../scss/section/reviews';
+@import '../scss/section/contact';
+// =====================
+// IMPORT RESPONSIVE
+// =====================
+@import '../scss/responsive/responsive';

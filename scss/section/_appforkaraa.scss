@@ -1,0 +1,16 @@
+#app {
+    background: $secondary-color-1;
+    padding: 0;
+    height: 30rem;
+
+    .app_text {
+        padding-top: 5rem;
+    }
+
+    .app_img {
+        position: relative;
+        z-index: 100;
+        top: -12rem;
+    }
+
+}

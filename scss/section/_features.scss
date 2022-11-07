@@ -1,0 +1,95 @@
+#features 
+{
+    // padding-left: 5rem;
+    .lg_section 
+    {
+        padding-left: 28rem;
+    }
+    .featured 
+    {
+        padding-left: 32rem;
+        padding-right: 0rem;
+        margin-top: 5rem;
+        // width: 1800px;
+        margin: 0 auto;
+       
+        &_card 
+        {
+            position: relative;
+            height: 35rem;
+            @include border-radius(2rem);
+            overflow: hidden;
+            margin-bottom: 2rem;
+           
+         
+            &:hover img
+            {
+                @include transform(scale(1.1));
+                object-position: bottom center;
+            }
+            &-img 
+            {
+                @include border-radius(2rem);
+                overflow: hidden;
+                
+            }
+            img 
+            {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                filter:contrast(0.8) brightness(0.6);
+                @include transition(0.8s ease 0s);
+            }
+            &-content 
+            {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                bottom: -100%;
+                left: 0;
+                @include border-radius(2rem 2rem 0 0);
+                width: 100%;
+                height: 50%;
+                background: $primary-color-1;
+                padding-left: 3rem;
+                @include transition(0.5s ease);
+            }
+            &:hover 
+            {
+                .featured_card-content 
+                {
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+ .owl-carousel .owl-nav.disabled {
+    display: block !important;
+}
+.featured_slider .owl-nav {
+    position: absolute;
+    right: 1rem;
+    bottom: -10rem;
+    font-size: 5rem;
+    color: $primary-color;
+
+}
+
+
+
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: $dark-color;
+    text-decoration: none;
+    
+}

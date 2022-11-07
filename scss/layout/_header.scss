@@ -1,0 +1,11 @@
+#header_area
+{
+   min-height: 5rem;
+   border-bottom: 1px solid $dark-color-1;
+   @extend .flex;
+   align-items: center;
+   padding: 1.5rem 0;
+   z-index: 2000;
+   background:$light-color;
+}
+

@@ -1,0 +1,152 @@
+footer {
+  padding: 5rem 2rem 3rem 2rem;
+  position: relative;
+  background: $dark-color;
+  color: $light-color;
+}
+  .footer_single 
+  {
+    p 
+    {
+      color: $light-color;
+      width: 80%;
+      text-align: center;
+      font-weight: 300;
+    }
+    img 
+    {
+      width: 15rem;
+    }
+
+    .socail_links 
+    {
+      ul 
+      {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        li 
+        {
+          a 
+          {
+            i 
+            {
+              font-size: 2.5rem;
+              color: $light-color;
+              &:hover 
+              {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+    h3 
+    {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .list-items 
+    {
+      li 
+      {
+        margin: 2rem 0;
+        a 
+        {
+          color: $light-color-8;
+          font-weight: 400;
+          font-size: 1.6rem;
+          &:hover 
+          {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+.footer_form 
+{
+h2 
+{
+  font-weight: 500;
+  font-size: 2rem;
+}
+  .newsletter_form {
+    form {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+
+        input[type="email"] {
+            height: 5rem;
+            padding: 1rem 2rem !important;
+            width: 100%;
+            background: $light-color !important;
+            @include border-radius(1rem);
+            @include transition(0.5s ease);
+            border: 0;
+            outline: 0;
+            &:focus 
+            {
+                padding-left: 3rem;
+            }
+        }
+    }
+}
+}
+.copyright_text 
+{
+  padding-top: 3rem;
+  span 
+  {
+    color: $light-color;
+  }
+  a {
+    display: inline-block;
+    color: $primary-color;
+    &:hover 
+    {
+      color: $secondary-color;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUREY
+@media only screen and (max-width: 991px) {
+  footer .footer-top h2 {
+    text-align: left !important;
+    font-size: 35px !important;
+  }
+
+  footer .footer-top .download-app-button {
+    margin-bottom: 1.5rem;
+  }
+
+  footer .footer-top .inner-column h2 {
+    text-align: left !important;
+    font-size: 35px !important;
+  }
+
+}
+

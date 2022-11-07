@@ -1,0 +1,203 @@
+#app_hero {
+    position: relative;
+    // height: 50rem;
+    padding: 22rem 0 10rem 0;
+
+    .dark_title {
+
+        font-size: 3.6rem;
+    }
+
+    .app_statistics {
+        gap: 2rem;
+
+        .number_box {
+            span {
+                font-family: $poppins;
+                font-weight: 700;
+                font-size: 3rem;
+
+
+            }
+
+            h2 {
+                font-size: 2rem;
+                color: $dark-color-8;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin: 0.5rem 0 3rem 0;
+            }
+        }
+    }
+
+    .howitwork {
+        a {
+            font-size: 2rem;
+        }
+    }
+
+    .secondary_btn {
+        border: 0.2rem solid transparent;
+
+        &:hover {
+            border: 0.2rem solid $dark-color-6;
+        }
+    }
+
+    .karaa_app-img {
+
+        position: relative;
+        // img 
+        // {
+        //     // position: absolute;
+        //     // left: 25%;
+        //     // top: 4rem;
+        // }
+
+    }
+}
+
+
+#easytouseapp {
+    position: relative;
+    .dark_title {
+
+        font-size: 3.6rem;
+    }
+    .secondary_btn {
+        border: 0.2rem solid transparent;
+
+        &:hover {
+            border: 0.2rem solid $dark-color-6;
+        }
+    }
+
+}
+
+.apps_img {
+    position: relative;
+    z-index: 10;
+
+    &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        @include transform(translateX(-50%));
+        bottom: 5%;
+        width: 40rem;
+        height: 40rem;
+        @include border-radius(1.5rem);
+        @include box-shadow(0 1rem 2rem $dark-color-1);
+        background: $light-color-1;
+        border: 0.1rem solid $light-color-4;
+        z-index: -9;
+    }
+}
+
+#advantage_of_karaa-app {
+    .dark_title {
+
+        font-size: 3.6rem;
+    }
+    .secondary_btn {
+        border: 0.2rem solid transparent;
+        margin-top: 2rem;
+
+        &:hover {
+            border: 0.2rem solid $dark-color-6;
+        }
+    }
+
+    .advantages {
+        ul {
+            li {
+                font-size: 2rem;
+                font-weight: 400;
+                color: $dark-color;
+                margin-bottom: 1.5rem;
+
+                i {
+                    color: $dark-color;
+                    position: relative;
+                    top: 0.5rem;
+                    font-size: 3rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+// FAQ 
+
+#faq {
+
+    .main-wrapper {
+        overflow-x: hidden;
+    }
+
+    .faq-content {
+        .faq-item {
+            margin-bottom: 0.8rem;
+
+            &-head {
+                color: $dark-color;
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                justify-content: space-between;
+                background: $light-color-1;
+                @include box-shadow(0 0.1rem 0.5rem $dark-color-1);
+                border: 0.1rem solid $light-color-4;
+                backdrop-filter: blur(2rem);
+                padding: 1.5rem 2rem;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                @include border-radius(0.3rem);
+
+                &:hover {
+                    @include box-shadow(0 0 1.5rem 0 $dark-color-1);
+                }
+
+            }
+
+            &-icon {
+                cursor: pointer;
+                font-size: 1.6rem;
+                text-align: center;
+                user-select: none;
+                background: $light-gray;
+                width: 2.5rem;
+                height: 2.5rem;
+                line-height: 2.5rem;
+                @include border-radius(0.5rem);
+            }
+
+            &-text {
+                font-size: 2rem;
+            }
+
+            &-body {
+                overflow: hidden;
+                max-height: 0;
+                background: $light-color-2;
+                color: $dark-color;
+                transition: all 0.3s ease;
+                border: 0.1rem solid $light-color-4;
+
+                p {
+                    font-weight: 300;
+                    padding: 1rem;
+                    color: $dark-color !important;
+                    margin: 0;
+                }
+            }
+        }
+
+        .show-para {
+            max-height: 1000px;
+        }
+    }
+}

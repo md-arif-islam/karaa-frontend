@@ -1,0 +1,30 @@
+.menu_icon 
+{
+    position: relative;  
+    width: 5rem;
+    height: 5rem;
+    background: $dark-color;
+    @include border-radius(50%);
+    @extend .flex_center;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0;
+    z-index: 3000;
+    visibility: hidden;
+    display: none;
+    &:hover 
+    {
+        background: $primary-color;
+    }
+    &:hover i
+    {
+        color: $dark-color;
+    }
+    i 
+    {
+        font-size: 4rem;
+        color: $light-color;
+
+    }
+
+}

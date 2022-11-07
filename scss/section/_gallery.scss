@@ -1,0 +1,108 @@
+#gallery_of_karaa 
+{
+    background: $light-color;   
+}
+
+
+
+.bikeImg 
+{
+  position: relative;
+  overflow: hidden;
+  @include border-radius(1.5rem);
+  @include box-shadow(0 0.1rem 0.1rem $dark-color-1, 0 0.2rem 0.2rem $dark-color-1, 0 0.4rem 0.4rem $dark-color-1, 0 0.8rem 0.8rem $dark-color-1, 0 1.6rem 1.6rem $dark-color-1);
+  transform-origin: center;
+  background: $gradient-7;
+  @include transition(0.5s ease);
+  z-index: 10;
+
+  cursor: pointer;
+  &:hover .bikeImg_content
+  {
+    @include transform(translateY(0));
+    @include transition(0.2s ease);
+  }
+  &:hover img
+  {
+    @include transform(scale(1.1));
+    @include transition(0.2s ease);
+  }
+img 
+{
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // width: 100%;
+  // height: 100%;
+  @include transition(0.5s ease);
+  &:hover 
+  {
+    @include transform(scale(1.1));
+  }
+}
+&_content 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include transform(translateY(-100%));
+  background: $gradient-6;
+  opacity: 0.8;
+  @include transition(0.1s ease);
+  z-index: 10;
+  @extend .flex_center;
+  z-index: 200;
+  a 
+  {
+    font-family: $poppins;
+    font-weight: 600;
+    position: absolute;
+    bottom: -100%;
+    z-index: 100;
+    color: $light-color;
+    padding: 2rem 0;
+    font-size: 2rem;
+    @include transition(1s ease);
+    background: $dark-color-6;
+    width: 100%;
+    height: 30%;
+    border-top: 0.1rem solid $light-color-6;
+    @extend .flex_center;
+    text-align: center;
+    flex-direction: column;
+    // @include border-radius(0.5rem);
+    backdrop-filter: blur(1rem);
+  }
+  .view 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     i 
+     {
+      color: $light-color;
+      font-size: 5rem;
+     }
+     .bike-desc 
+     {
+     
+      opacity: 0;
+      
+     }
+  }
+ 
+}
+}
+.big-stretch 
+{
+  position: relative;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+

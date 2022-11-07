@@ -1,0 +1,144 @@
+#team_of_karaa {
+  position: relative;
+  background: $light-color;
+h2 
+{
+  margin-bottom: 10rem;
+}
+  .teamwrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+
+    .profile-card {
+      position: relative;
+      text-align: center;
+      font-family: sans-serif;
+      width: 30rem;
+      height: 30rem;
+      background: #fff;
+      @include border-radius(1.5rem);
+      box-shadow: 0 1rem 2rem $dark-color-1;
+      transition: .6s;
+
+      &:nth-child(odd) {
+        @include transform(scale(0.9));
+      }
+
+      &:hover {
+        @include border-radius(1.5rem);
+      }
+
+      .img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: .6s;
+        z-index: 99;
+
+        img {
+          width: 100%;
+          @include border-radius(1rem);
+          user-select: none;
+        }
+      }
+
+      &:hover .img {
+        transform: translateY(-100px) scale(0.6);
+      }
+      &:hover  img 
+      {
+        @include border-radius(50%);
+      }
+      &:hover  .caption 
+      {
+        transform: translateY(-150px);
+        opacity: 1;
+      }
+      .caption 
+      {
+        text-align: center;
+          transform: translateY(-130px);
+          opacity: 0;
+          transition: .6s;
+          @extend .flex_center;
+          flex-direction: column;
+          gap: 0;
+          width: 100%;
+          h3 
+          {
+            font-family: $poppins;
+            font-weight: 700;
+            color: $dark-color;
+            margin-bottom: 0;
+            margin: 0;
+          }
+          p 
+          {
+            text-align: center;
+          }
+
+          .social-links 
+          {
+           @extend .flex_content;
+           gap: 2rem ;
+           i 
+           {
+            font-size: 3rem;
+            color: $dark-color-6;
+            @include transition(0.8s ease);
+            &:hover 
+            {
+              color: $text-color;
+            }
+           }
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+// .caption {
+//   text-align: center;
+//   transform: translateY(-80px);
+//   opacity: 0;
+//   transition: .6s;
+// }
+
+// .profile-card:hover .caption {
+//   opacity: 1;
+// }
+
+// .caption h3 {
+//   font-size: 21px;
+//   font-family: sans-serif;
+//   color: $dark-color;
+// }
+
+// .caption p {
+//   font-size: 15px;
+//   color: #0c52a1;
+//   font-family: sans-serif;
+//   margin: 2px 0 9px 0;
+// }
+
+// .caption .social-links a {
+//   color: #333;
+//   margin-right: 15px;
+//   font-size: 21px;
+//   transition: .6s;
+// }
+
+// .social-links a:hover {
+//   color: #0c52a1;
+// }

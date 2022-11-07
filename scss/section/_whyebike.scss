@@ -1,0 +1,20 @@
+#whyebike 
+{
+    @include box-shadow($shadow);
+    background: $light-color;
+    img 
+    {
+       width: 100%;
+       @include border-radius(1.5rem);
+       border: 0.2rem solid $light-gray;
+    }
+   .pr-6 
+   {
+    padding: 6rem;
+   }
+   .pl-6
+   {
+    padding-left: 6rem;
+   }
+   
+}
